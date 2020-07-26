@@ -9,10 +9,39 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
+export_file_url = 'https://drive.google.com/uc?export=download&id=1eV3DA9T0PVwm9G7aRSTwsG8dQIg7D0EQ'
 export_file_name = 'export.pkl'
 
-classes = ['black', 'grizzly', 'teddys']
+classes = ['AIRBUS_HELICOPTERS_H145', 'AIRBUS_HELICOPTERS_UH72_LAKOTA', 'BEECHCRAFT_C12_HURON','BEECHCRAFT_KING_AIR','BEECHCRAFT_T34_MENTOR',
+  'BEECHCRAFT_T6_TEXAN_II',
+  'BELL_BOEING_CMV22B_OSPREY',
+  'BELL_BOEING_V22_OSPREY',
+  'BELL_MODEL_206',
+  'BELL_OH58_KIOWA',
+  'BOEING_E6_MERCURY',
+  'BOEING_EA18G_GROWLER',
+  'BOEING_FA18_SUPERHORNET',
+  'BOEING_P8_POSEIDON',
+  'BOEING_T45_GOSHAWK',
+  'DE_HAVILLAND_CANADA_DHC3_OTTER',
+  'FOKKER_F27_FRIENDSHIP',
+  'GRUMMAN_C2_GREYHOUND',
+  'GULFSTREAM_C20',
+  'GULFSTREAM_G500',
+  'IAI_RQ2_PIONEER',
+  'LEONARDO_AW119',
+  'LOCKHEED_C130_HERCULES',
+  'LOCKHEED_MARTIN_F16_FIGHTING_FALCON',
+  'LOCKHEED_MARTIN_F35_LIGHTNING_II',
+  'LOCKHEED_MARTIN_P3_ORION',
+  'NORTHROP_F5_FREEDOM_FIGHTER',
+  'NORTHROP_GRUMMAN_E2_HAWKEYE',
+  'NORTHROP_GRUMMAN_MQ4_TRITON',
+  'NORTHROP_T38_TALON',
+  'SIKORSKY_CH53E_SUPER_STALLION','SIKORSKY_HH60_JAYHAWK',
+  'SIKORSKY_SH60_SEAHAWK',
+  'SIKORSKY_UH60_BLACK_HAWK']
+
 path = Path(__file__).parent
 
 app = Starlette()
